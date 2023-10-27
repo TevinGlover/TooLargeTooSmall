@@ -4,19 +4,18 @@
 import java.util.Scanner;
 public class Main {
 //whileloop
-
+// Scanner to add user input
   Scanner scanner = new Scanner(System.in);
-  System.out.print("Enter you number")
+  System.out.print("Enter your number")
   int guess = scanner.nextInt();
-
+  // the max number you can guess
   int max = 15;
   int randomNumber = (int) (Math.random() * max);
 //if else statement
   public static void main(String[] args) {
-    int guess = randomNumber;
-    if (guess < 6) {
+    if (guess < randomNumber) {
       System.out.println("too small");
-    } else if (guess > 8) {
+    } else if (guess > randomNumber) {
       System.out.println("too large");
     }  else {
       System.out.println("correct guess");
@@ -25,8 +24,3 @@ public class Main {
 }
 
 //random number for user input
-
-    public static void main(String[] args){
-        
-    }
-}
