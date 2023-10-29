@@ -25,13 +25,14 @@ public class Main {
 
       if (guess < randomNumber) {
         System.out.println("too small");
-        trycounter++;
+        trycounter++;// add one to every time the loop rests.
         guess = scanner.nextInt();// this pause the loop and allows u to enter another guess. restarting the loop.
       } else if (guess > randomNumber) {
         System.out.println("too large");
         guess = scanner.nextInt();// this pause the loop and allows u to enter another guess. restarting the loop.
       } else {
         System.out.println("correct guess !! " + "it took: " +  trycounter +" tries!");
+        // if correct print out statement and amount of tries.
         break;// this stops the loop.
 
 
